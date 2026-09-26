@@ -1,0 +1,1 @@
+import{a,b,c,d,e,f}from"./chunk-Z2D6PKM4.js";import"./chunk-JLAGNISW.js";import"./chunk-WOT6VMZA.js";export{c as EXTRA_TREES,e as TWO_BY_TWO,b as growTree,a as isTreeReplaceable,d as registerTree,f as treeTypeForSapling};
