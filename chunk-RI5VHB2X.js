@@ -1,0 +1,1 @@
+var o={overworld:{minY:-64,maxY:320},nether:{minY:0,maxY:256},end:{minY:0,maxY:256}},E=t=>o[t]||o.overworld,n=2,_=20,I=1e3/_;var e=[[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]];var r=[[0,0,-1],[0,0,1],[-1,0,0],[1,0,0]];var x=[5,4,1,0];export{E as a,n as b,I as c,e as d,r as e,x as f};
