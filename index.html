@@ -2,20 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-visual">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>MineOpus</title>
 <meta name="description" content="A detailed Minecraft remake built with three.js">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="data:,">
 <style>
 /* MineOpus: the whole GUI is drawn on #gui (canvas, GUI-scaled, pixelated). */
-html, body { margin: 0; padding: 0; overflow: hidden; background: #000; height: 100%; }
+html, body { margin: 0; padding: 0; overflow: hidden; background: #000; height: 100%; overscroll-behavior: none; }
 body { user-select: none; -webkit-user-select: none; font-family: monospace; cursor: default; }
-#game { position: fixed; inset: 0; display: block; image-rendering: pixelated; }
+#game { position: fixed; inset: 0; display: block; image-rendering: pixelated; touch-action: none; }
+/* phones: no callout / tap flash on long presses (the rest of the touch styles: src/ui/touch/page.js) */
+canvas { -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; }
 #ui { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 10; }
 #ui > * { pointer-events: none; }
 #ui canvas { image-rendering: pixelated; image-rendering: crisp-edges; }
-#ui #gui { position: absolute; left: 0; top: 0; }
+#ui #gui { position: absolute; left: 0; top: 0; touch-action: none; }
 #ui #crosshair { position: absolute; mix-blend-mode: difference; display: none; }
 
 html, body { height: 100%; background: #000; color-scheme: dark; }
@@ -24,6 +29,6 @@ html, body { height: 100%; background: #000; color-scheme: dark; }
 <body>
 <canvas id="game"></canvas>
 <div id="ui"></div>
-<script type="module" src="main.js?v=270770a6db"></script>
+<script type="module" src="main.js?v=7844a1c094"></script>
 </body>
 </html>
