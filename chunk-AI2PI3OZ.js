@@ -1,0 +1,1 @@
+function o(r,e,n){let t=r?.net?.session?r.net.world:null;return!t||t.owns(e,n)}function s(r,e){let n=r?.net;if(!n?.session)return e();n.ownerCapture=(n.ownerCapture|0)+1;try{return e()}finally{n.ownerCapture--}}function u(r,e,n,t){return o(r,e,n)?(s(r,t),!0):!1}export{o as a,s as b,u as c};

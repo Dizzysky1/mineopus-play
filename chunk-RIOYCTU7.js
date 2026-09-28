@@ -1,0 +1,1 @@
+import{a,b,c,d,e}from"./chunk-57B7JV56.js";import"./chunk-HYFHDPP3.js";import"./chunk-AO6LPOQL.js";import"./chunk-JUAI33BJ.js";import"./chunk-YIMYUVVA.js";import"./chunk-RI5VHB2X.js";import"./chunk-G354DFTH.js";import"./chunk-H7CDIYRC.js";import"./chunk-WOT6VMZA.js";export{d as NaturalSpawner,a as SPAWN_EXTRA,b as SPAWN_RULES,c as STRUCTURE_SPAWNS,e as isSlimeChunk};
